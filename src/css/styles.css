@@ -7,12 +7,137 @@
 /* Common styles */
 @import url('./reset.css');
 @import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  ul,
+  ol {
+    list-style-type: none;
+    text-decoration: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  button{
+    cursor:pointer;
+  }
+.container{
+  padding: 16px;
+}
+  .form {
+width: 371px;
+height: 40px;
+margin: 0 auto;
+margin-bottom: 32px;
+margin-top: 36px;
+  }
+.label{
+width: 272px;
+height: 40px;
+}
+  .gallery {
+    display:flex;
+    flex-wrap: wrap;
+    border: 1px solid #808080;
+    gap: 24px;
+    justify-content: space-between;
+  }
+
+  .gallery-item {
+    width: calc((100% - 48px) / 3);
+    box-sizing: border-box;
+    background-color: #fff;
+  }
+
+  .gallery-item:hover {
+    transform:scale;
+  }
+
+  .info {
+    padding: 4px 20px;
+    display: flex;
+    gap: 24px;
+font-weight: 400;
+font-size: 12px;
+line-height: 200%;
+letter-spacing: 0.04em;
+color: #2e2f42;
+  }
+
+p {display: flex;
+flex-direction: column;
+}
+  .form-btn {
+border-radius: 8px;
+padding: 8px 16px;
+border: none;
+background: #4e75ff;
+font-weight: 500;
+font-size: 16px;
+letter-spacing: 0.04em;
+color: #fff;
+text-align: center;
+  }
+  .form-btn:hover{
+background: #6c8cff;
+  }
+  
+  .loader{
+    display:block;
+  }
+    .loader {
+      display:none;
+      width: 48px;
+      height: 48px;
+      border: 5px solid hsl(53, 98%, 52%);
+      border-bottom-color: hsl(192, 100%, 50%);
+      border-radius: 50%;
+      display: inline-block;
+      box-sizing: border-box;
+      animation: rotation 1s linear infinite;
+      }
+  
+      @keyframes rotation {
+      0% {
+          transform: rotate(0deg);
+      }
+      100% {
+          transform: rotate(360deg);
+      }
+      } 
+      .load-more{
+      margin-top: 32px;
+      border-radius: 8px;
+       padding: 8px 16px;
+      border: none;
+       background: #4e75ff;
+       color: #fff;
+       display: flex;
+       
+      }
+    .is-hidden {
+    display: none;
+     }
+     .load-more.is-hidden{
+    display:none;
+    }
