@@ -40,5 +40,5 @@ export function showLoadMoreButton() {
 loadMoreBtn.classList.remove('is-hidden');
 }
 export function hideLoadMoreButton() {
-loadMoreBtn.classList.add('is-hidden)')
+loadMoreBtn.classList.add('is-hidden');
 }

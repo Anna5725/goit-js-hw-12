@@ -61,7 +61,8 @@ try {
     createGallery(data.hits);
     const image = document.querySelector('.gallery-item');
     const imageHeight = image.getBoundingClientRect().height;
-    window.scrollBy({top:imageHeight * 2, behaviouur:'smooth'});
+    window.scrollBy({top:imageHeight * 2, 
+                     behavior:'smooth'});
     const loadedImages = document.querySelectorAll('.gallery-item').length;
     if (loadedImages >=totalHits){
         hideLoadMoreButton();
@@ -77,3 +78,5 @@ try {
     hideLoader();
 }
 });
+
+
